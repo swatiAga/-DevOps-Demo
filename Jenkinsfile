@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('sfsf') {
       steps {
-        grypeScan(autoInstall: true, scanDest: 'docker:mohdkhalid/php-apache:latest', repName: 'myScanResult.txt')
+        grypeScan(autoInstall: true, scanDest: 'registry:mohdkhalid/php-apache:latest', repName: 'myScanResult.txt')
       }
     }
 
